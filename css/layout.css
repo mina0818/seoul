@@ -147,9 +147,12 @@ body{
     height: 42px;
     border: 3px solid #2292e9;
 }
+input::placeholder {
+    color: #2292e9;
+  }
 .header_bottom .inner .srh_area form{}
 .header_bottom .inner .srh_area form input{
-    width: calc(100% - 58px);
+    width: calc(100% - 100px);
     float: left;
     padding: 0 10px;
     height: 38px;
@@ -158,12 +161,12 @@ body{
     border: 0;
     /* color: #2292e9; */
 }
-.header_bottom .inner .srh_area form i{
+.header_bottom .inner .srh_area form a{
     position: absolute;
     top: 12px;
     right: 42px;
 }
-.header_bottom .inner .srh_area form i img{
+.header_bottom .inner .srh_area form a img{
     margin-left: 3px;
     /* vertical-align: middle; */
     cursor: pointer;
