@@ -9,8 +9,8 @@ $(function(){
         $(".tab_nav li").removeClass("on")
         $(this).addClass('on')
 
-        $(".con").removeClass("on")
-        $(target).addClass('on')
+        $(".con").removeClass("show")
+        $(target).addClass('show')
 
     })
         
@@ -63,9 +63,11 @@ $(function(){
   $('.banner_slider1').slick({
     arrows: true,
     autoplay : true,
-    autoplaySpeed : 1000,
-    prevArrow : "<div class='control_box control_box_prev'><div class='banner-prev'><span class='blind'>이전 슬라이드</span></div></div>",		// 이전 화살표 모양 설정
-		nextArrow : "<div class='control_box control_box_next'><div class='banner-next'><span class='blind'>다음 슬라이드</span></div></div>",
+    autoplaySpeed : 3000,
+    prevArrow: $('.control_box_prev'), 
+    nextArrow: $('.control_box_next')
+    /* prevArrow : "<div class='control_box control_box_prev'><div class='banner-prev'><span class='blind'>이전 슬라이드</span></div></div>",		// 이전 화살표 모양 설정
+		nextArrow : "<div class='control_box control_box_next'><div class='banner-next'><span class='blind'>다음 슬라이드</span></div></div>", */
   });
   $(".banner_slider1").on('beforeChange', function(event, slick, currentSlide, nextSlide){
     $(".current-num1").text(nextSlide + 1);
@@ -82,9 +84,11 @@ $(function(){
   $('.banner_slider2').slick({
     arrows: true,
     autoplay : true,
-    autoplaySpeed : 1000,
-    prevArrow : "<div class='control_box control_box_prev'><div class='banner-prev'><span class='blind'>이전 슬라이드</span></div></div>",		// 이전 화살표 모양 설정
-		nextArrow : "<div class='control_box control_box_next'><div class='banner-next'><span class='blind'>다음 슬라이드</span></div></div>",
+    autoplaySpeed : 3000,
+    prevArrow: $('.control_box_prev2'), 
+    nextArrow: $('.control_box_next2')
+    // prevArrow : "<div class='control_box control_box_prev'><div class='banner-prev'><span class='blind'>이전 슬라이드</span></div></div>",		// 이전 화살표 모양 설정
+		// nextArrow : "<div class='control_box control_box_next'><div class='banner-next'><span class='blind'>다음 슬라이드</span></div></div>",
   });
   $(".banner_slider2").on('beforeChange', function(event, slick, currentSlide, nextSlide){
     $(".current-num2").text(nextSlide + 1);
@@ -134,8 +138,10 @@ $(function(){
     autoplay : true,
     autoplaySpeed : 1000,
     slidesToShow: 3,
-    prevArrow : "<div class='bt_control_box bt_control_box_prev'><div class='bottom-prev'><span class='blind'>이전 슬라이드</span></div></div>",		// 이전 화살표 모양 설정
-		nextArrow : "<div class='bt_control_box bt_control_box_next'><div class='bottom-next'><span class='blind'>다음 슬라이드</span></div></div>",
+    prevArrow: $('.bt_control_box_prev'), 
+    nextArrow: $('.bt_control_box_next')
+    /* prevArrow : "<div class='bt_control_box bt_control_box_prev'><div class='bottom-prev'><span class='blind'>이전 슬라이드</span></div></div>",		// 이전 화살표 모양 설정
+		nextArrow : "<div class='bt_control_box bt_control_box_next'><div class='bottom-next'><span class='blind'>다음 슬라이드</span></div></div>", */
   });
   $(".bottom_slider").on('beforeChange', function(event, slick, currentSlide, nextSlide){
     $(".bottom-num").text(nextSlide + 1);
