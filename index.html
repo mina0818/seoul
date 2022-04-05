@@ -65,8 +65,10 @@
                             <div class="lang_box">
                                 <select name="" id="lang">
                                     <option value="ENGLISH">ENGLISH</option>
-                                    <option value="ENGLISH">ENGLISH</option>
-                                    <option value="ENGLISH">ENGLISH</option>
+                                    <option value="日本語">日本語</option>
+                                    <option value="简体中文">简体中文</option>
+                                    <option value="繁体中文">繁体中文</option>
+                                    <option value="WorldWide">WorldWide</option>
                                 </select>
                             </div><!-- //lang_box -->
                             <input type="button" value="GO" class="select_btn">
@@ -82,24 +84,26 @@
                         <fieldset>
                             <legend class="blind">검색</legend>
                             <input type="text" name="" placeholder="검색어를 입력해 주세요">
-                            <i><img src="images/keyboard.png" alt=""></i>
-                            <!-- 뜻이 있으면 좋겠다 혹은 에이태그나 버튼으로 만든게 좋았겠다 이 친구의 기능을 참고해서 키보드열기.. 등등 -->
-                            
-                            <button class="srh_btn"></button>
-                            <!-- 태그에 설명이 없네 스팬에 블라인드... ㅜㅜ -->
+                            <div class="srh_btn_box">
+                                <a href="">
+                                    <img src="images/keyboard.png" alt="입력도구">
+                                <!-- <span class="blind">입력도구</span> -->
+                                </a>                            
+                                <button class="srh_btn"><span class="blind">검색</span></button>
+                            </div>
                         </fieldset>
                     </form>
                 </div><!-- //srh_area -->
 
                 <div class="weater_area">
-                    <i class="weater_img"><img src="images/weathericon_new_d1.png" alt=""></i>
+                    <a href="" class="weater_img"><img src="images/weathericon_new_d1.png" alt="약간 흐림 이미지"></a>
                     <!-- 이미지에 꼭!!! 뜻 블라인드 적자!!!  -->
 
                     <div class="txt_area">
                         <p>
                             <a href="">
                                 <strong>3℃</strong>
-                                <span>맑음</span>
+                                <span>약간 흐림</span>
                             </a>
                         </p>
                         <p>
@@ -125,77 +129,81 @@
                                 주요뉴스
                             </a>
                             <!-- 여기 밑에 내용이 왔어야지 순차적인 탭이 된다 지금은 엉뚱하게 탭 된다 -->
+                            <div class="con con1 show" id="con1">
+                                <div class="banner_slider banner_slider1">
+                                        <div class="banner_slide">
+                                            <div class="img_wrap">
+                                                <img src="images/news_banner.jpg" alt="">
+                                                <div class="txt_area">
+                                                    <p>
+                                                        일상회복 잠시 멈춤... 2주간 거리두기 강화 2021. 12. 18.(토) ~ 2022. 1. 2.(일)
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+        
+                                        <div class="banner_slide">
+                                            <div class="img_wrap">
+                                            <img src="images/news_banner2.jpg" alt="">
+                                                <div class="txt_area">
+                                                    <p>
+                                                        재택치료자 외래진료센터, 응급센터 운영...코로나19 긴급 대책
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+                                <div class="controler">
+                                    <button class="con_btn control_box_prev prev_img">이전 슬라이드</button>
+                                    <button class="con_btn play">슬라이드 시작</button>
+                                    <button class="con_btn stop active">슬라이드 정지</button>
+                                    <button class="con_btn control_box_next next_img">다음 슬라이드</button>
+                                </div>
+                            </div><!-- //con con1 -->
                         </li>
                         <li>
                             <a href="#con2">
                                 <i class="icon icon2"></i> 
                                 시민참여
                             </a>
+                            <div class="con con2" id="con2" >
+                                <div class="banner_slider banner_slider2">
+                                        <div class="banner_slide">
+                                            <div class="img_wrap">
+                                                <img src="images/simin_banner.jpg" alt="">
+                                                <div class="txt_area">
+                                                    <p>
+                                                        스페셜 역사 토크쇼 서울 2000년, 역사와 관광이 만나다! / 2021. 12. 22.(수) 오후 2시
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="banner_slide">
+                                            <div class="img_wrap">
+                                                <img src="images/simin_banner2.jpg" alt="">
+                                                <div class="txt_area">
+                                                    <p>
+                                                        재택치료자 외래진료센터, 응급센터 운영...코로나19 긴급 대책
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+                                <div class="controler">
+                                    <button class="con_btn control_box_prev2 prev_img">이전 슬라이드</button>
+                                    <button class="con_btn play">슬라이드 시작</button>
+                                    <button class="con_btn stop active">슬라이드 정지</button>
+                                    <button class="con_btn control_box_next2 next_img">다음 슬라이드</button>
+                                </div>
+                            </div><!-- //con con2 -->
                         </li>
                     </ul>
-                    <div class="con con1 on" id="con1">
-                        <div class="banner_slider banner_slider1">
-                                <div class="banner_slide">
-                                    <div class="img_wrap">
-                                        <img src="images/news_banner.jpg" alt="">
-                                        <div class="txt_area">
-                                            <p>
-                                                일상회복 잠시 멈춤... 2주간 거리두기 강화 2021. 12. 18.(토) ~ 2022. 1. 2.(일)
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="banner_slide">
-                                    <div class="img_wrap">
-                                    <img src="images/news_banner2.jpg" alt="">
-                                        <div class="txt_area">
-                                            <p>
-                                                재택치료자 외래진료센터, 응급센터 운영...코로나19 긴급 대책
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                        </div>
-                        <div class="controler">
-                            <button class="con_btn play">슬라이드 시작</button>
-                            <button class="con_btn stop active">슬라이드 정지</button>
-                        </div>
-                    </div><!-- //con con1 -->
-                    <div class="con con2" id="con2" >
-                        <div class="banner_slider banner_slider2">
-                                <div class="banner_slide">
-                                    <div class="img_wrap">
-                                        <img src="images/simin_banner.jpg" alt="">
-                                        <div class="txt_area">
-                                            <p>
-                                                스페셜 역사 토크쇼 서울 2000년, 역사와 관광이 만나다! / 2021. 12. 22.(수) 오후 2시
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="banner_slide">
-                                    <div class="img_wrap">
-                                        <img src="images/simin_banner2.jpg" alt="">
-                                        <div class="txt_area">
-                                            <p>
-                                                재택치료자 외래진료센터, 응급센터 운영...코로나19 긴급 대책
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                        </div>
-                        <div class="controler">
-                            <button class="con_btn play">슬라이드 시작</button>
-                            <button class="con_btn stop active">슬라이드 정지</button>
-                        </div>
-                    </div><!-- //con con2 -->
                 </div><!-- //slider -->
 
                 <div class="right_area">
                     <div class="corona">
-                        <i><img src="images/bg_corona.gif" alt=""></i>
+                        <!-- <i><img src="images/bg_corona.gif" alt=""></i> -->
 
                         <a href="" class="corona_top">
                             <div class="txt_list">
@@ -223,7 +231,7 @@
                     </div><!-- //corona -->
 
                     <div class="banner">
-                        <a href="#"><img src="images/ohsehun_banner.jpg" alt=""></a>
+                        <a href="#"><img src="images/ohsehun_banner.jpg" alt="다시 뛰는 공정도시 오세훈 입니다"></a>
                     </div>
                 </div><!-- //right_area -->
             </div><!-- //inner -->
@@ -314,16 +322,16 @@
                 <div class="inner">
                     <ul>
                         <li>
-                            <a href=""><img src="images/txt_banner (3).jpg" alt=""></a>
+                            <a href=""><img src="images/txt_banner (3).jpg" alt="홀로서기 응원 로맨스 웹드라마 1인분 하우스"></a>
                         </li>
                         <li>
-                            <a href=""><img src="images/txt_banner (1).jpg" alt=""></a>
+                            <a href=""><img src="images/txt_banner (1).jpg" alt="코로나 19 서울시 관련 선별진료소 현황"></a>
                         </li>
                         <li>
-                            <a href=""><img src="images/txt_banner (4).jpg" alt=""></a>
+                            <a href=""><img src="images/txt_banner (4).jpg" alt="코로나19 일상회복 잠시 멈춤 2주간 거리두기 강화"></a>
                         </li>
                         <li>
-                            <a href=""><img src="images/txt_banner (2).jpg" alt=""></a>
+                            <a href=""><img src="images/txt_banner (2).jpg" alt="코로나 19 방역수칙 위반 신고센터"></a>
                         </li>
                     </ul>
                 </div>
@@ -334,7 +342,7 @@
             <div class="inner">
                 <div class="content">
                     <h3>이벤트 신청</h3>
-                    <div class="more_btn"><a href=""></a></div>
+                    <div class="more_btn"><a href=""><span class="blind">이벤트 신청 더보기</span></a></div>
 
                     <ul>
                         <li>
@@ -362,7 +370,7 @@
 
                 <div class="content">
                     <h3>이달의 행사 및 축제</h3>
-                    <div class="more_btn"><a href=""></a></div>
+                    <div class="more_btn"><a href=""><span class="blind">이달의 행사 및 축제 더보기</span></a></div>
 
                     <ul>
                         <li>
@@ -562,7 +570,7 @@
                     </li>
                     <li>
                         <a href="">
-                                <img src="images/gov_news8.jpg" alt=""> 
+                                <img src="images/gov_news8.jpg" alt="코로나19 서울시 생활정보"> 
                         </a>
                     </li>
                 </ul>
@@ -612,7 +620,7 @@
                 <div class="conts cont3">
                     <div class="wrap">
                         <a href="">
-                            <img src="images/bg_sns_list.gif" alt="">
+                            <img src="images/bg_sns_list.gif" alt="서울시 SNS">
                         </a>
                         <span>서울시 SNS</span>
                         <div class="sns_icon">
@@ -644,7 +652,7 @@
 
         <div class="sc_08">
             <div class="inner">
-                <a href=""><img src="images/bottom_banner.jpg" alt=""></a>
+                <a href=""><img src="images/bottom_banner.jpg" alt="스토리인서울 서울 건축 산책"></a>
             </div>
         </div><!-- //sc_08 -->
 
@@ -653,30 +661,32 @@
             <div class="inner">
                 <div class="bottom_slider">
                         <div class="bottom_slide">
-                            <a href=""><img src="images/slider_banner (1).jpg" alt=""></a>
+                            <a href=""><img src="images/slider_banner (1).jpg" alt="서울시의 모든 공모전을 한눈에 내손안에 서울공모전"></a>
                         </div>
                         <div class="bottom_slide">
-                            <a href=""><img src="images/slider_banner (2).jpg" alt=""></a>
+                            <a href=""><img src="images/slider_banner (2).jpg" alt="서울시 건설공사의 모든것 내집앞 공사가 궁금하세요?"></a>
                         </div>
                         <div class="bottom_slide">
-                            <a href=""><img src="images/slider_banner (3).jpg" alt=""></a>
+                            <a href=""><img src="images/slider_banner (3).jpg" alt="전동킥보드 주정차 위반신고"></a>
                         </div>
                         <div class="bottom_slide">
-                            <a href=""><img src="images/slider_banner (4).jpg" alt=""></a>
+                            <a href=""><img src="images/slider_banner (4).jpg" alt="대한민국 국가의 상징"></a>
                         </div>
                         <div class="bottom_slide">
-                            <a href=""><img src="images/slider_banner (5).jpg" alt=""></a>
+                            <a href=""><img src="images/slider_banner (5).jpg" alt="찾아가는 여성 취업 상담버스"></a>
                         </div>
                         <div class="bottom_slide">
-                            <a href=""><img src="images/slider_banner (6).jpg" alt=""></a>
+                            <a href=""><img src="images/slider_banner (6).jpg" alt="서울시민 참여입법"></a>
                         </div>
                         <div class="bottom_slide">
-                            <a href=""><img src="images/slider_banner (7).jpg" alt=""></a>
+                            <a href=""><img src="images/slider_banner (7).jpg" alt="스마트 서울 포털"></a>
                         </div>
                     </div><!-- //swiper-->
                     <div class="bt_controler">
+                        <button class="bt_con_btn bt_control_box bt_control_box_prev">이전 슬라이드</button>
                         <button class="bt_con_btn play">슬라이드 시작</button>
                         <button class="bt_con_btn stop active">슬라이드 정지</button>
+                        <button class="bt_con_btn bt_control_box bt_control_box_next">다음 슬라이드</button>
                     </div>
                 </div>
             </div>
