@@ -83,8 +83,10 @@
     width: 690px;
     height: 350px;
     margin-left: 80px;
+    top: 0;
 }
-.sc_01 .inner .slider .con.on{
+.sc_01 .inner .slider #con2{top: -175px;}
+.sc_01 .inner .slider .con.show{
     visibility: visible;
     padding: initial;
 }
@@ -118,11 +120,11 @@
     line-height: 40px;
     padding-left: 10px;
 }
-.sc_01 .inner .banner-next{
+.sc_01 .inner .next_img{
     background: url(../images/icon_set_common_2019.png);
     /* --swiper-theme-color: rgba(0, 0, 0, 0); */
     cursor: pointer;
-    background-position: -256px -281px;;
+    background-position: -255px -282px;;
     width: 18px;
     height: 18px;
     z-index: 999;
@@ -133,17 +135,14 @@
 .sc_01 .inner .slider .control_box .swiper-button-next::after{
     display: none;
 }
-.sc_01 .inner .banner-prev{
+.sc_01 .inner .prev_img{
     background: url(../images/icon_set_common_2019.png);
     /* --swiper-theme-color: rgba(0, 0, 0, 0); */
     cursor: pointer;
-    background-position: -242px -281px;;
+    background-position: -244px -282px;;
     width: 18px;
     height: 18px;
     z-index: 999;
-    top: 24px;
-    opacity: 100;
-    left: 49px;
 }
 .sc_01 .inner .slider .control_box .swiper-button-prev::after{
     display: none;
@@ -163,9 +162,6 @@
     z-index: 999;
     font-size: 14px;
 }
-.current-num{
-}
-
 
 .line_box{
     position: absolute;
@@ -185,25 +181,26 @@
 
 .controler{
     position: absolute;
-    bottom: 8px;
-    right: 21px;
-    width: 20px;
-    height: 20px;
+    bottom: 13px;
+    right: 10px;
+    display: -webkit-box;
+    display:-ms-flexbox;
+    display:-moz-box;
 }
 .controler .play, .controler .con_btn.active{display: block;}
 .controler .play, .controler .con_btn{
     display: none;
     /* display: block; */
-    width: 100%;
-    height: 100%;
+    width: 18px;
+    height: 18px;
     text-indent: -9999px;
     overflow: hidden;
 }
 .controler .play{
-    background: url(../images/icon_set_common_2019.png) no-repeat -269px -285px;
+    background: url(../images/icon_set_common_2019.png) no-repeat -269px -282px;
 }
 .controler .stop{
-    background: url(../images/icon_set_common_2019.png) no-repeat -285px -285px;
+    background: url(../images/icon_set_common_2019.png) no-repeat -285px -282px;
 }
 
 
@@ -213,10 +210,18 @@
     width: 360px;
     position: relative;
 }
-.right_area .corona{}
+.right_area .corona{
+    background: url(../images/bg_corona.gif) no-repeat 0 0 ;
+    position: relative;
+    width: 100%;
+    height: 214px;
+    overflow: hidden;
+}
 .right_area .corona i{}
 .right_area .corona i img{}
 .right_area .corona .corona_top{
+    display: block;
+    height: 93px;
 }
 .right_area .corona .corona_top .txt_list{}
 .right_area .corona .corona_top .txt_list .list_01{
@@ -251,6 +256,10 @@
 
 }
 
+.right_area .corona .corona_bottom{
+    display: block;
+    height: 120px;
+}
 .right_area .corona .corona_bottom .txt_list .list_01{
     position: absolute;
 
@@ -894,13 +903,17 @@
 /* .bottom_slide .slick-slide .slick-current .slick-active{margin: 0 10px;} */
 .bt_control_box{
     position: absolute;
-    bottom: -30px;
-    right: 0;
+    bottom: -1px;
+    right: -20px;
+    border: 1px solid #999;
     /* border: 1px solid #000;
     width: 20px; height: 20px; */
 }
-.bt_control_box_prev{right: 40px;}
-.bt_control_box .bottom-prev{
+.bt_control_box_prev{
+    border: 1px solid #999;
+    right: 18px;
+}
+.bt_controler .bt_control_box_prev{
     background: url(../images/icon_set_common.png) no-repeat -45px -43px;
     width: 20px;
     height: 20px;
@@ -909,7 +922,7 @@
     overflow: hidden;
     cursor: pointer;
 }
-.bt_control_box .bottom-next{
+.bt_controler .bt_control_box_next{
     background: url(../images/icon_set_common.png) no-repeat -86px -43px;
     width: 20px;
     height: 20px;
@@ -930,8 +943,8 @@
 .bt_controler .bt_con_btn.active{display: block;}
 .bt_controler .bt_con_btn{
     display: none;
-    width: 100%;
-    height: 100%;
+    width: 20px;
+    height: 20px;
     text-indent: -9999px;
     overflow: hidden;
 }
