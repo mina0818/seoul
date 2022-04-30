@@ -992,16 +992,16 @@
     position: relative;
     padding-right: 20px;
 }
-.sc_10 .inner .tab_menu.on > a span::after{
-    top: 4px;
+.sc_10 .inner .tab_menu.on .link_menu > a span::after{
+    top: 12px;
     transform: rotate(45deg);
     transform-origin: center center;
 }
-.sc_10 .inner .tab_menu > a span::after{
+.sc_10 .inner .tab_menu .link_menu > a span::after{
     content: '';
     position: absolute;
-    top: 8px;
-    right: 0px;
+    margin-left: 19px;
+    margin-top: 4px;
     height: 7px;
     width: 7px;
     border-style: solid;
@@ -1012,7 +1012,7 @@
     transform-origin: center center;
 }
 .sc_10 .inner .tab_menu.on > a{background: #e2e2e2;}
-.sc_10 .inner .tab_menu > a{
+.sc_10 .inner .tab_menu > .link_menu{
     position: relative;
     display:block;
     padding: 16px 0;
@@ -1021,7 +1021,7 @@
     color: #333;
     text-align: center;
 }
-.sc_10 .inner .tab_menu .dept3{
+.sc_10 .inner .tab_menu:last-child .link_menu{
     border-right: 1px solid #d0d0d0;
 }
 .sc_10 .inner .tab_menu .cont{
