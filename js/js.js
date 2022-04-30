@@ -15,11 +15,11 @@ $(function(){
     })
         
 
-    $(".tab_menu a").click(function(e){
+    $(".tab_menu .link_menu").click(function(e){
         e.preventDefault();
 
         if($(this).siblings('.cont').height() > 0){
-            //만약 .tab_menu a의 형제인 .cont의 높이가 0보다 크다면
+            //만약 .tab_menu a의 .cont의 높이가 0보다 크다면
             $('.cont').stop().animate({height:0},300)
             $('.tab_menu').removeClass('on')
              //.cont의 높이를 0, 0.3초동안
